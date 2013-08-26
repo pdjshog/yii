@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{1863889A-00DF-4350-BA39-669CA949CB81}") = "yii", "yii.phpproj", "{FBCB875E-CFF5-4CDE-918B-11DA2E36868E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Local|PHP 5.2 = Local|PHP 5.2
+		Production|PHP 5.2 = Production|PHP 5.2
+		Staging|PHP 5.2 = Staging|PHP 5.2
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBCB875E-CFF5-4CDE-918B-11DA2E36868E}.Local|PHP 5.2.ActiveCfg = Local|PHP 5.2
+		{FBCB875E-CFF5-4CDE-918B-11DA2E36868E}.Local|PHP 5.2.Deploy.0 = Local|PHP 5.2
+		{FBCB875E-CFF5-4CDE-918B-11DA2E36868E}.Production|PHP 5.2.ActiveCfg = Production|PHP 5.2
+		{FBCB875E-CFF5-4CDE-918B-11DA2E36868E}.Production|PHP 5.2.Deploy.0 = Production|PHP 5.2
+		{FBCB875E-CFF5-4CDE-918B-11DA2E36868E}.Staging|PHP 5.2.ActiveCfg = Staging|PHP 5.2
+		{FBCB875E-CFF5-4CDE-918B-11DA2E36868E}.Staging|PHP 5.2.Deploy.0 = Staging|PHP 5.2
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
