@@ -49,11 +49,15 @@ class LoginForm extends CFormModel
 		if(!$this->hasErrors())
 		{
 			$this->_identity=new UserIdentity($this->username,$this->password);
-			if(!$this->_identity->authenticate()) {
-				$this->addError('password','Incorrect username or password.');
-			}
-			if(!$this->_identity->authenticate() == 3)
+			$auth = $this->_identity->authenticate();
+						
+			if($this->_identity->authenticate() == 1) {
+				$this->addError('username','Invalid username.');
+			}else if($this->_identity->authenticate() == 2) {
+				$this->addError('password','Incorrect password.');
+			}		elseif ($auth == 6) {
 				$this->addError('username', 'Username is currently not active, please activate using the activation URL in your email and try again. Also administrator must activate your profile.');
+		}
 		}
 	}
 

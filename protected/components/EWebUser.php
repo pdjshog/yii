@@ -11,6 +11,14 @@ class EWebUser extends CWebUser{
 		return false;
 	}
 	
+	function isActive(){
+		$user = $this->loadUser();
+		if (is_null($user['moderation'])||is_null($user['mailverification'])) {
+			return false;
+			}
+			return true;
+		}
+	
 	// Load user model.
 	protected function loadUser()
 	{
