@@ -14,7 +14,7 @@
 
 <body>
 
-<?php
+<?php // get all static pages
 $pages = Yii::app()->db->createCommand()->select('*')->from('static')->queryAll();
 
 $sub_page[] = array('label'=>'Editor', 'url'=>Array('/StaticPage/'), 'visible'=>Yii::app()->user->isAdmin());
@@ -32,8 +32,9 @@ $menu = array(
 			array(
 				'class'=>'bootstrap.widgets.TbMenu',
 				'items'=>array(
+					array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 					/*array('label'=>'Home', 'url'=>array('/site/index')),
-					    array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+					    
 					    array('label'=>'Contact', 'url'=>array('/site/contact')),*/
 					array('label'=>'User list', 'url'=>array('/user')),
 					array('label'=>'Pages', 'url'=>array('#'),'items'=>$sub_page),

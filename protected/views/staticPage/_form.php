@@ -26,9 +26,14 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'content'); ?>
+		
+		
+		 <?php echo $form->labelEx($model,'content'); ?><br />
+         <?php $this->widget('application.extensions.tinymce.ETinyMce',
+array(
+'model'=>$model,'attribute'=>'content','editorTemplate'=>'full','htmlOptions'=>array('rows'=>6, 'cols'=>50, 'class'=>'tinymce'),
+)); ?>
+ <?php echo $form->error($model,'contractData'); ?>
 	</div>
 
 	<div class="row">
@@ -48,6 +53,8 @@
 		<?php echo $form->textArea($model,'url',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'url'); ?>
 	</div>
+	
+
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
