@@ -34,10 +34,10 @@ class User extends CActiveRecord
 			array('username, password, email', 'required'),
 			array('isadmin', 'numerical', 'integerOnly'=>true),
 			array('username, password, email, avatar', 'length', 'max'=>255),
-			array('moderation, mailverification', 'safe'),
+			array('moderation, mailverification,token', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, username, password, email, isadmin, moderation, mailverification, avatar', 'safe', 'on'=>'search'),
+			array('id, username, password, email, isadmin, moderation, mailverification', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,6 +66,7 @@ class User extends CActiveRecord
 			'moderation' => 'Moderation',
 			'mailverification' => 'Mailverification',
 			'avatar' => 'Avatar',
+			'token'=>'mail token',
 		);
 	}
 
@@ -95,6 +96,7 @@ class User extends CActiveRecord
 		$criteria->compare('moderation',$this->moderation,true);
 		$criteria->compare('mailverification',$this->mailverification,true);
 		$criteria->compare('avatar',$this->avatar,true);
+		$criteria->compare('token',$this->token,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

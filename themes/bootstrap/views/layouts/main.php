@@ -41,6 +41,7 @@ $menu = array(
 					array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 					array('label'=>'My page ('.Yii::app()->user->name.')', 'url'=>array('user/view&id='.Yii::app()->user->getId()), 'visible'=>!Yii::app()->user->isGuest),
 					array('label'=>'Logout', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+					array('label'=>'Register', 'url'=>array('/user/register'), 'visible'=>Yii::app()->user->isGuest),
 					),
 				),
 			),

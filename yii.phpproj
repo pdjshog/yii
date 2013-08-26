@@ -18,10 +18,6 @@
 }
 "Files"
 {
-    "assets"
-    {
-    "ProjRelPath" = "T"
-    }
     "css"
     {
     "ProjRelPath" = "T"
@@ -8590,6 +8586,10 @@
     {
     "ProjRelPath" = "T"
     }
+    "protected\\components\\MyUrlManager.php"
+    {
+    "ProjRelPath" = "T"
+    }
     "protected\\components\\UserIdentity.php"
     {
     "ProjRelPath" = "T"
@@ -8647,6 +8647,10 @@
     "ProjRelPath" = "T"
     }
     "protected\\models\\ContactForm.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "protected\\models\\Item.php"
     {
     "ProjRelPath" = "T"
     }
@@ -8738,11 +8742,31 @@
     {
     "ProjRelPath" = "T"
     }
-    "protected\\views\\site\\pages\\about.php"
+    "protected\\views\\site\\pages\\static.php"
     {
     "ProjRelPath" = "T"
     }
     "protected\\views\\site\\static.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "protected\\views\\staticPage"
+    {
+    "ProjRelPath" = "T"
+    }
+    "protected\\views\\staticPage\\static.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "protected\\views\\user"
+    {
+    "ProjRelPath" = "T"
+    }
+    "protected\\views\\user\\mail_ok.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "protected\\views\\user\\register.php"
     {
     "ProjRelPath" = "T"
     }
@@ -8783,6 +8807,10 @@
     "ProjRelPath" = "T"
     }
     "themes\\classic\\views\\system"
+    {
+    "ProjRelPath" = "T"
+    }
+    "upload"
     {
     "ProjRelPath" = "T"
     }
